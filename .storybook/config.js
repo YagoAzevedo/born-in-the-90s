@@ -1,0 +1,9 @@
+import { configure, addParameters, addDecorator } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
+import centered from '@storybook/addon-centered/react';
+
+addDecorator(withInfo);
+addDecorator(centered);
+
+// Import all stories
+configure(require.context('../stories', true, /\.stories\.tsx$/), module);
