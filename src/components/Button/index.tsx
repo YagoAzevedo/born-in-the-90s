@@ -1,5 +1,1 @@
-import React from 'react';
-
-export const Button = () => {
-  return <button>teste</button>
-}
+export {Button, ButtonProps} from './Button'
